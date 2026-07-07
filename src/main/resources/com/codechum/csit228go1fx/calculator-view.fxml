@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane prefHeight="396.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.codechum.csit228go1fx.CalculatorController">
+   <rowConstraints>
+      <RowConstraints maxHeight="160.0" minHeight="0.0" prefHeight="160.00000190734863" />
+      <RowConstraints maxHeight="160.0" minHeight="0.0" prefHeight="160.999999999999993" />
+      <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="160.0" />
+      <RowConstraints maxHeight="160.00000762939453" minHeight="4.0" prefHeight="160.0" />
+      <RowConstraints maxHeight="160.0" minHeight="10.0" prefHeight="160.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+   </columnConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="7" GridPane.rowIndex="1">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" prefHeight="56.0" prefWidth="39.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="4" GridPane.rowIndex="2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnNumberClicked" text="0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfResult" alignment="CENTER_RIGHT" editable="false" prefHeight="25.0" prefWidth="276.0" text="0" GridPane.columnSpan="4">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </TextField>
+      <Button mnemonicParsing="false" onAction="#btnOperationClicked" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnOperationClicked" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnOperationClicked" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#btnOperationClicked" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>
