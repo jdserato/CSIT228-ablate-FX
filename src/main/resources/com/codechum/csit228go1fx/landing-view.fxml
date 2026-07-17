@@ -18,15 +18,18 @@
         </columnConstraints>
         <rowConstraints>
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Name" />
-            <Label text="Gender" GridPane.rowIndex="1" />
-            <Label text="Program" GridPane.rowIndex="2" />
+            <Label text="UserName" />
+            <Label text="Gender" GridPane.rowIndex="4" />
+            <Label text="Program" GridPane.rowIndex="5" />
             <TextField fx:id="tfName" GridPane.columnIndex="1" />
-            <HBox GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <HBox GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                <children>
                   <RadioButton fx:id="rbMale" mnemonicParsing="false" text="Male">
                      <toggleGroup>
@@ -35,11 +38,18 @@
                   <RadioButton fx:id="rbFemale" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
                </children>
             </HBox>
-            <ComboBox fx:id="cbProgram" prefWidth="150.0" promptText="Select program..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="cbProgram" prefWidth="150.0" promptText="Select program..." GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label text="Email" GridPane.rowIndex="1" />
+            <TextField fx:id="tfEmail" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Send money to" GridPane.rowIndex="2" />
+            <Label text="Amount" GridPane.rowIndex="3" />
+            <ComboBox fx:id="cbPeople" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="tfAmount" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
       <TextArea fx:id="taResult" layoutX="128.0" layoutY="403.0" prefHeight="83.0" prefWidth="371.0" />
       <Button layoutX="274.0" layoutY="368.0" mnemonicParsing="false" onAction="#onSaveClicked" text="Save" />
       <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onLogoutClicked" text="LogOut" />
+      <Button layoutX="371.0" layoutY="368.0" mnemonicParsing="false" onAction="#onDeleteClicked" style="-fx-background-color: red;" text="Delete Account" textFill="WHITE" />
    </children>
 </AnchorPane>
